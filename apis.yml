@@ -1,8 +1,24 @@
 aid: enter
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/enter.png
 name: Enter
-description: 'Enter is a company surfaced as a portfolio company of founders-fund, partech, ribbit-capital
-  and added to the API Evangelist network as a stub for enrichment. Sector: healthtech. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Enter is a Berlin-based residential energy-efficiency company that positions itself as
+  Germany''s largest energy advisor, combining on-site building analysis with installation of heat pumps,
+  photovoltaic (solar) systems, battery storage, EV wallboxes, and home energy-management systems. It
+  guides homeowners through energy consulting, subsidy (Foerderung) applications, and financing, and reports
+  37,000+ completed projects and 150M+ EUR in secured subsidies. Enter is a B2C service provider with no
+  public developer API, documentation portal, or SDKs; it was surfaced as a VC-portfolio lead and added
+  to the API Evangelist network as a stub for enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/enter/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,10 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Healthtech
+- Energy
+- Cleantech
+- Energy Efficiency
+- Heat Pumps
+- Solar
+- Building Renovation
+- Germany
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +48,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/enter-domain-security.yml
 - type: Website
   url: https://www.enter.de/
+- type: Blog
+  url: https://www.enter.de/blog
+- type: Support
+  url: https://www.enter.de/kundenservice
+- type: TermsOfService
+  url: https://www.enter.de/waermepumpe-agb
+- type: PrivacyPolicy
+  url: https://www.enter.de/datenschutz
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
